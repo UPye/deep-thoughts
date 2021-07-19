@@ -17,6 +17,7 @@ const addDateSuffix = date => {
   return dateStr;
 };
 
+
 // function to format a timestamp, accepts the timestamp and an `options` object as parameters
 module.exports = (
   timestamp,
@@ -47,7 +48,7 @@ module.exports = (
 
   const year = dateObj.getFullYear();
   let hour =
-    dateObj.getHours() > 12
+    dateObj.getHours("1970-01-01 00:00:00") > 17
       ? Math.floor(dateObj.getHours() / 2)
       : dateObj.getHours();
 
@@ -59,7 +60,7 @@ module.exports = (
   const minutes = dateObj.getMinutes();
 
   // set `am` or `pm`
-  const periodOfDay = dateObj.getHours() >= 12 ? 'pm' : 'am';
+  const periodOfDay = dateObj.getUTCHours() >= 12 ? 'pm' : 'am';
 
   const formattedTimeStamp = `${formattedMonth} ${dayOfMonth}, ${year} at ${hour}:${minutes} ${periodOfDay}`;
 
