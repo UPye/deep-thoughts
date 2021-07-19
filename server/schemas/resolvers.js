@@ -44,7 +44,10 @@ const resolvers = {
                 .populate('thoughts')
         },
     },
+
     Mutation: {
+
+        // Add user
         addUser: async (parent, args) => {
             const user = await User.create(args);
             const token = signToken(user);
@@ -52,6 +55,7 @@ const resolvers = {
             return { token, user };
         },
 
+        // Log user in
         login: async (parent, { email, password }) => {
             const user = await User.findOne({ email });
 
@@ -69,6 +73,7 @@ const resolvers = {
             return { token, user };
         },
 
+        // Add a thought
         addThought: async (parent, args, context) => {
             if (context.user) {
                 const thought = await Thought.create({ ...args, username: context.user.username });
@@ -80,6 +85,37 @@ const resolvers = {
                 );
 
                 return thought;
+            }
+
+            throw new AuthenticationError('You need to be logged in!');
+        },
+
+        // Add a reaction to a thought
+        addReaction: async (parent, { thoughtId, reactionBody }, context) => {
+            if (context.user) {
+                const updatedThought = await Thought.findOneAndUpdate(
+                    { _id: thoughtId },
+                    { $push: { reactions: { reactionBody, username: context.user.username } } },
+                    { new: true, runValidators: true }
+                );
+
+                return updatedThought;
+            }
+
+            throw new AuthenticationError('You need to be logged in!');
+        },
+
+        // Add a friend to friends array
+        addFriend: async (parent, { friendId }, context) => {
+            if (context.user) {
+                const updatedUser = await User.findOneAndUpdate(
+                    { _id: context.user._id },
+                    // Prevents duplicate entry for same user friend
+                    { $addToSet: { friends: friendId } },
+                    { new: true }
+                ).populate('friends');
+
+                return updatedUser;
             }
 
             throw new AuthenticationError('You need to be logged in!');
