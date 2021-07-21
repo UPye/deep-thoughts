@@ -56,6 +56,7 @@ const Home = () => {
             <FriendList
               username={userData.me.username}
               friendCount={userData.me.friendCount}
+              friends={userData.me.friends}
             />
           </div>
         ) : null}
