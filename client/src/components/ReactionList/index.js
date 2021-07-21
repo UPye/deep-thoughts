@@ -16,8 +16,9 @@ const ReactionList = ({ reactions }) => {
                             key={ reaction._id }>
                                 { reaction.reactionBody } 
                                 { '// '}
-                                <Link to={`/profile/${reaction.username}`} style={{ fontWeight: 700 }}>
-                                    { reaction.username } on { reaction.createdAt }
+                                <Link to={`/profile/${reaction.username}`} 
+                                    style={{ fontWeight: 700 }}>
+                                    { reaction.username } posted on { reaction.createdAt }
                                 </Link>
                             </p>
                     ))}
