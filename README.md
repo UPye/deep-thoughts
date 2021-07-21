@@ -27,7 +27,7 @@ This is a REACT single page application, and uses a custom built API with server
 
 # Link to Site
 
-[Link to Site](https://deep-pye-thoughts.herokuapp.com "_blank")
+[go](https://deep-pye-thoughts.herokuapp.com){:target="_blank"}
 
 
 # Walk Thru Gif
