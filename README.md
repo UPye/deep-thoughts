@@ -25,7 +25,7 @@ This is a REACT single page application, and uses a custom built API with server
   * Apollo Server
   * Heroku
 
-# Technology
+# Link to Site
 
 [Link to Site](https://deep-pye-thoughts.herokuapp.com)
 
