@@ -25,6 +25,11 @@ This is a REACT single page application, and uses a custom built API with server
   * Apollo Server
   * Heroku
 
+# Technology
+
+[Link to Site](https://deep-pye-thoughts.herokuapp.com)
+
+
 # Walk Thru Gif
     
   ![My PortFolio](https://github.com/UPye/deep-thoughts/blob/main/client/public/assets/Deep%20Thoughts.gif)
