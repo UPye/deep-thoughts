@@ -17,9 +17,7 @@ const ThoughtForm = () => {
                 // Prepend the newest thought to the front of the array
                 cache.writeQuery({
                     query: QUERY_THOUGHTS,
-                    data: { thoughts: 
-                        [addThought, ...thoughts] 
-                    }
+                    data: { thoughts: [addThought, ...thoughts] }
                 });
             } catch (e) {
                 console.error(e);
