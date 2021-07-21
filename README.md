@@ -26,7 +26,7 @@ This is a REACT single page application, and uses a custom built API with server
 
 # Walk Thru Video
     
-  ![My PortFolio]()
+  ![My PortFolio](https://github.com/UPye/deep-thoughts/blob/main/client/public/assets/Deep%20Thoughts.gif)
 
 # Questions  
 
