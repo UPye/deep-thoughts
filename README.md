@@ -29,7 +29,7 @@ This is a REACT single page application, and uses a custom built API with server
 
 [Link to Site](https://deep-pye-thoughts.herokuapp.com)
 
-  * Hold CTRL/Command + Link above to open in a new tab
+  * Hold CTRL/Command + link above, to open it in a new tab.
 
 
 # Walk Thru Gif
