@@ -9,7 +9,8 @@
   
   * [Description](#description)
   * [Technology](#technology)
-  * [Walk Thru Video](#Walk-Thru-Video)
+  * [Link to Site](#link-to-site)
+  * [Walk Thru Gif](#walk-thru-gif)
   * [Questions](#questions)
   * [License](#license)
 
@@ -24,7 +25,7 @@ This is a REACT single page application, and uses a custom built API with server
   * Apollo Server
   * Heroku
 
-# Walk Thru Video
+# Walk Thru Gif
     
   ![My PortFolio](https://github.com/UPye/deep-thoughts/blob/main/client/public/assets/Deep%20Thoughts.gif)
 
@@ -38,7 +39,6 @@ This is a REACT single page application, and uses a custom built API with server
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   
   Copyright (c) 2021 Urika Pye
-
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
