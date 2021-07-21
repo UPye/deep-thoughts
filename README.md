@@ -27,7 +27,7 @@
 
 # Walk Thru Video
     
-    [My PortFolio](<iframe src="https://drive.google.com/file/d/1gvgtzdzsKQ8hQc9ld06OUlfNYYGlvC7v/preview" width="640" height="480"></iframe>)
+    [My PortFolio](https://github.com/UPye/deep-thoughts/blob/main/client/public/assets/walkthrough.mp4)
 
 # Questions  
 
